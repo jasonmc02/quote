@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Quote</title>
+    <%= csrf_meta_tags %>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/app/styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="/app/styles/main.css">
+  </head>
+  <body ng-app="angApp">
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Quote</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="#/">Home</a></li>
+                  <li><a href="#/about">About</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="inner cover" ng-view=""></div>
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Powered by <a href="https://twitter.com/dntplyll" target="_blank">@dntplyll</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/app/vendors/jquery.js"></script>
+    <script src="/app/vendors/angular.js"></script>
+    <script src="/app/vendors/bootstrap.js"></script>
+    <script src="/app/vendors/angular-resource.js"></script>
+    <script src="/app/vendors/angular-route.js"></script>
+    <script src="/app/router.js"></script>
+    <script src="/app/controllers/main.js"></script>
+    <script src="/app/controllers/about.js"></script>
+  </body>
+</html>
